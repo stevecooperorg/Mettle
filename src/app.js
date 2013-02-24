@@ -4,7 +4,7 @@ var PEG = require("pegjs");
 var grammarFile = "skillgrammar.txt";
 var skillFile = "../examples/modern-combat/skills.txt";
 
-var input = "aaa.\r\nbbb: ccc 5\r\n";
+var input = "bbb : ccc 5.\r\n";
 
 fs.readFile(grammarFile, 'utf-8', readGrammarFile);
 
