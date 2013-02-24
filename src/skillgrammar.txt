@@ -9,14 +9,14 @@ line
   / comment
 
 node
-  = name '.' NL 
-  / name ':' name number (',' name number)* '.' 
+  = _ name _ '.' _ NL 
+  / _ name _ ':' _ name _ number _ (',' _ name _ number)* _ '.' 
 
 NL
-  = '\r\n'
+  = '\r' '\n'
 
 comment
-  = '#' .*
+  = '#' .* NL
 
 name
   = [a-z]+
@@ -30,4 +30,4 @@ _ "whitespace"
 // Whitespace is undefined in the original JSON grammar, so I assume a simple
 // conventional definition consistent with ECMA-262, 5th ed.
 whitespace
-  = [ \t\n\r]
+  = [ \t]
