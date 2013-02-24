@@ -1,17 +1,27 @@
-start
-  = additive
+skillgraph
+  = BOM? line*
 
-additive
-  = left:multiplicative "+" right:additive { return left + right; }
-  / multiplicative
+BOM
+  = '\uFEFF'
 
-multiplicative
-  = left:primary "*" right:multiplicative { return left * right; }
-  / primary
+line
+  = node / comment / blankline
 
-primary
-  = integer
-  / "(" additive:additive ")" { return additive; }
+node
+  = name '.' 
+  / name ':' name number (',' name number)* '.'
 
-integer "integer"
-  = digits:[0-9]+ { return parseInt(digits.join(""), 10); }
+comment
+  = '#' .* '\n'
+
+blankline
+  = '\n'
+
+ws
+  = ' '*
+
+name
+  = [a-z]+
+
+number
+   = [0-9]+
