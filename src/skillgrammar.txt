@@ -5,17 +5,18 @@ BOM
   = '\uFEFF'
 
 line
-  = node / comment / blankline
+  = node 
+  / comment
 
 node
-  = name '.' 
-  / name ':' name number (',' name number)* '.'
+  = name '.' NL 
+  / name ':' name number (',' name number)* '.' 
+
+NL
+  = '\r\n'
 
 comment
-  = '#' .* '\n'
-
-blankline
-  = '\n'
+  = '#' .*
 
 name
   = [a-z]+

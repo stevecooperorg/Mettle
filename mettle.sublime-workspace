@@ -1,0 +1,420 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"skillF",
+				"skillFile"
+			],
+			[
+				"open",
+				"fs.open(path, flags, mode, callback);"
+			],
+			[
+				"pro",
+				"program"
+			],
+			[
+				"jasmine-q",
+				"jasmine-jquery"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/app.js",
+			"settings":
+			{
+				"buffer_size": 540,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/skillgrammar.txt",
+			"settings":
+			{
+				"buffer_size": 427,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 173.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/usr/src/Mettle/examples/modern-combat/skills.txt",
+		"/C/usr/src/Mettle/src/app.js",
+		"/C/usr/src/Mettle/src/package.json",
+		"/C/usr/Dropbox/projects/programming-career/job-application.text",
+		"/C/usr/Dropbox/The Hills Are Alive With The Sound of Glute Pain.text",
+		"/C/usr/Dropbox/Apps/ViewRanger/nidderdale-way-17-02-2013/1361175957-23164-82.69.1.47.kml",
+		"/C/usr/Dropbox/projects/programming-career/Career-Projects-List.text",
+		"/C/usr/Dropbox/work/odata-notes.text",
+		"/C/usr/Dropbox/work/Queries-define-parameters.text",
+		"/C/usr/Dropbox/projects/software-serials/Numbers And Codes.txt",
+		"/C/Users/Steve/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/Q50VUJDV/3.json",
+		"/C/Users/Steve/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/Q50VUJDV/2.json",
+		"/C/usr/Dropbox/projects/programming-career/career-strategy.text",
+		"/C/usr/src/QueryDesigner/Source/QueryDesigner/QueryDesigner.csproj",
+		"/C/Users/Steve/Downloads/bootmetro-0.6.0/bootmetro-0.6.0/templates/partials/charms.mustache",
+		"/C/Users/Steve/Downloads/bootmetro-0.6.0/bootmetro-0.6.0/templates/pages/hub.mustache",
+		"/C/usr/Dropbox/src/node/learningNode/app.js",
+		"/C/usr/Dropbox/src/node/learningNode/config.js",
+		"/C/usr/Dropbox/src/node/learningNode/server.js",
+		"/C/usr/Dropbox/projects/blog-posts/performance-testing-node-js.text",
+		"/C/usr/Dropbox/src/node/learningNode/runclient.js",
+		"/C/usr/Dropbox/src/node/learningNode/client.js",
+		"/C/usr/Dropbox/projects/blog-posts/Installing-docco-on-Windows 8.text",
+		"/C/usr/Dropbox/src/node/blog/server.js",
+		"/C/usr/Dropbox/src/node/blog/src/server.js",
+		"/C/usr/Dropbox/src/node/learningNode/web.config",
+		"/C/usr/Dropbox/src/node/hello-world/app.js",
+		"/C/usr/Dropbox/src/node/hello-world/routes/index.js",
+		"/C/usr/Dropbox/src/node/hello-world/routes/radar.js",
+		"/C/usr/Dropbox/src/node/hello-world/package.json",
+		"/C/usr/Dropbox/src/node/node.sublime-project",
+		"/C/usr/src/nodestuff/app.js",
+		"/C/usr/src/nodestuff/server.js",
+		"/C/usr/src/nodestuff/router.js",
+		"/C/usr/src/nodestuff/index.js",
+		"/C/usr/src/nodestuff/hw.js",
+		"/C/usr/src/nodestuff/nodepad/app.js",
+		"/C/usr/Dropbox/work/An idea for a modern system.text",
+		"/C/usr/Dropbox/work/layoutGrammar/runLayoutParser.js",
+		"/C/usr/Dropbox/work/layoutGrammar/run.ps1",
+		"/C/usr/Dropbox/work/layoutGrammar/layout.js",
+		"/C/usr/Dropbox/work/layoutGrammar/layout.pegjs",
+		"/C/usr/Dropbox/scrap.text",
+		"/C/usr/Dropbox/projects/software-serials/sublime-text-serial.txt",
+		"/C/Users/Steve/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/CDJ3FSF4/Definition.json",
+		"/C/Users/Steve/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/CJNX677L/Pages.json",
+		"/C/Users/Steve/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/Q50VUJDV/Pages.json",
+		"/C/usr/src/dxtreme-typescript-wrapper/dxtreme-typescript-wrapper/dxtreme-typescript-wrapper.csproj",
+		"/C/usr/src/DxtremeWrapper/Data/chart.json",
+		"/C/Users/Steve/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/Q50VUJDV/chart.json",
+		"/C/usr/src/MooDPageBuilder/Source/MooDPageBuilderX/MooDPageBuilder.csproj",
+		"/C/usr/src/MooDPageBuilder/Source/MooDPageBuilder/MooDPageBuilder.csproj",
+		"/C/usr/src/MooDPageBuilder/Source/MooDPageBuilder/Config/sitedefinition.json",
+		"/C/Users/Steve/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/UWW3NJSV/sitedefinition.json",
+		"/C/usr/src/MooDPageBuilder/Resources/products_WB0914026/plastique-middleman-release/build/Css/badges.css",
+		"/C/usr/src/MooDPageBuilder/Resources/products_WB0914026/plastique-middleman-release/readme.txt",
+		"/C/usr/src/MooDPageBuilder/Resources/products_WB0914026/plastique-middleman-release/build/Scripts/chosen/abstract-chosen.js",
+		"/C/usr/src/MooDPageBuilder/Resources/products_WB0914026/plastique-middleman-release/config.rb",
+		"/C/usr/src/MooDPageBuilder/Resources/products_WB0914026/plastique-middleman-release/Gemfile",
+		"/C/Users/Steve/AppData/Local/Temp/Temp1_products_WB0914026.zip/plastique-middleman-release/readme.txt",
+		"/C/usr/src/MooDPageBuilder/Resources/products_WB0914026/plastique-middleman-release/icons.txt",
+		"/C/usr/Dropbox/work/Building From Fresh.text",
+		"/C/usr/web/100kmofpain.com/httpdocs/header.js",
+		"/C/usr/jasmine/Jasmine/jsTestDriver.conf",
+		"/C/usr/jasmine/Jasmine/jasmine/spec/javascripts/demo.js",
+		"/C/usr/jasmine/Jasmine/jasmine/lib/jasmine-1.3.1/jasmine.js",
+		"/C/usr/jasmine/Jasmine/run.bat",
+		"/C/usr/jasmine/Jasmine/jasmine/lib/JasmineAdapter.js",
+		"/C/Users/Steve/Downloads/json2.js",
+		"/C/usr/clare/JavaScript Tests/jasmine/README.md",
+		"/C/usr/clare/JavaScript Tests/stevesJsTestDriver.conf",
+		"/C/usr/clare/JavaScript Tests/jasmine/spec/javascripts/test.js",
+		"/C/usr/clare/JavaScript Tests/run.bat",
+		"/C/usr/jasmine/Jasmine/jasmine/spec/javascripts/fixtures/demo.html",
+		"/C/usr/jasmine/Jasmine/tests/test.js",
+		"/C/usr/clare/JavaScript Tests/jsTestDriver.conf",
+		"/C/usr/clare/JavaScript Tests/swarm.ps1.example",
+		"/C/usr/clare/JavaScript Tests/jasmine/spec/javascripts/fixtures/slider/fixture.html",
+		"/C/usr/clare/JavaScript Tests/jasmine/spec/javascripts/fixtures/slider/dependencies.html",
+		"/C/usr/clare/JavaScript Tests/jasmine/runner.html",
+		"/C/usr/clare/JavaScript Tests/runtests.bat",
+		"/C/usr/clare/JavaScript Tests/runserver.bat",
+		"/C/usr/clare/runtests.bat",
+		"/C/usr/clare/runserver.bat",
+		"/C/usr/clare/runjasminetests.bat",
+		"/C/usr/clare/runjasminetests.ps1",
+		"/C/usr/Dropbox/projects/games-1586/plot.text",
+		"/C/Users/Steve/Downloads/mailFilters.xml",
+		"/C/usr/Dropbox/desktop.ini",
+		"/C/Users/Steve/Desktop/Import GIT int TFS.text",
+		"/C/usr/Dropbox/projects/games-1586/[1586] System.txt",
+		"/C/usr/Dropbox/projects/games-1586/1586 system.text",
+		"/C/usr/Dropbox/projects/games-1586/player-backstory.text",
+		"/C/usr/Dropbox/projects/games-1586/1586-notes-for-players.text",
+		"/C/temp/WLAN_Atheros_10.0.0.75_Win8x86x64/setall.bat",
+		"/C/usr/Dropbox/projects/games-1586/[1586] Plot.txt",
+		"/C/usr/Dropbox/projects/games-a-will-to-murder/_readme.txt",
+		"/C/usr/Dropbox/projects/games-1586/[1586] Public Figures.txt",
+		"/C/usr/Dropbox/projects/masterplan/[Masterplan] 2012-12-20.text",
+		"/C/usr/Dropbox/projects/blog-posts/jQuery plugin development with TypeScript.text",
+		"/C/Users/Steve/Desktop/auto-copy-git-to-tfs.bat"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"start",
+			"parser",
+			"1",
+			"2",
+			"Include",
+			".d.ts",
+			"tsc",
+			"clock",
+			"or"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"2",
+			"X"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								540,
+								540
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "src/skillgrammar.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 306.0
+	},
+	"project": "/C/usr/src/Mettle/mettle.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"packa",
+				"hello-world/package.json"
+			],
+			[
+				"scrap",
+				"scrap.text"
+			],
+			[
+				"numbers",
+				"projects/software-serials/Numbers And Codes.txt"
+			],
+			[
+				"fre",
+				"work/Building From Fresh.text"
+			],
+			[
+				"fresh",
+				"work/Building From Fresh.text"
+			],
+			[
+				"plo",
+				"projects/games-1586/plot.text"
+			],
+			[
+				"system",
+				"projects/games-1586/[1586] System.txt"
+			],
+			[
+				"system.",
+				"projects/games-1586/1586 system.text"
+			],
+			[
+				"syst",
+				"projects/games-1586/[1586] System.txt"
+			],
+			[
+				"numb",
+				"projects/software-serials/Numbers And Codes.txt"
+			],
+			[
+				"scra",
+				"scrap.text"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
