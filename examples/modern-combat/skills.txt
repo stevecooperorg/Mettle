@@ -1,0 +1,62 @@
+﻿#
+# basic stats -- they are the most general.
+#
+dexterity.
+fitness.
+size.
+
+# derived stats
+coordination: dexterity 5.
+
+
+#
+# Guns!
+#
+firearms: coordination 5.
+handgun: firearms 5, quickdraw 5.
+rifle: firearms 5.
+quickdraw*: coordination 5.
+
+#
+# Brawling
+#
+kick: brawl 8, running 2.
+parry: coordination 5.
+punch: brawl 8.
+brawl: dexterity 5, fitness 5, size 5.
+
+# combat styles
+Karate: punch 7, kick 6, fitness 5.
+Queensbury rules: punch 9, fitness 8.
+
+
+#
+# Melee Weapons
+#
+melee: size 5, fitness 5.
+club: melee 5.
+sword: melee 5.
+shield: melee 5.
+spear: melee 5.
+
+
+#
+# running away
+# 
+running: fitness 5.
+sprint: running 8.
+dodge: coordination 5.
+horseriding: coordination 5.
+
+#
+# knowledge
+#
+tactics.
+
+#
+# Professions
+#
+knight*: sword 8, shield 4, horseriding 8, lance 7.
+swat team*: rifle 9, brawl 6, tactics 6.
+professional boxer*: Queensbury rules 10.
+cowboy*: quickdraw 9, horseriding 7, handgun 5.
