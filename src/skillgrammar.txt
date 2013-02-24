@@ -17,11 +17,16 @@ comment
 blankline
   = '\n'
 
-ws
-  = ' '*
-
 name
   = [a-z]+
 
 number
    = [0-9]+
+
+_ "whitespace"
+  = whitespace*
+
+// Whitespace is undefined in the original JSON grammar, so I assume a simple
+// conventional definition consistent with ECMA-262, 5th ed.
+whitespace
+  = [ \t\n\r]
