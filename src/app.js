@@ -38,7 +38,6 @@ function createParser(grammar) {
 			data = data.substring(BOM.length);
 		}
 		
-
 		console.log(data.substring(0, 80)
 			.replace(/\r/g, '\\r')
 			.replace(/\t/g, '\\t')

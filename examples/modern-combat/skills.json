@@ -1,0 +1,42 @@
+{
+	"skills": [
+		"dexterity",
+		"size",
+		"fitness",
+		"coordination",
+		"firearms",
+		"handgun",
+		"quickdraw",
+		"kick",
+		"brawl",
+		"running",
+		"parry",
+		"punch",
+		"karate",
+		"Queensbury rules",
+		"melee",
+		"club",
+		"sword",
+		"shield",
+		"spear",
+		"running",
+		"sprint",
+		"dodge",
+		"horseriding",
+		"tactics",
+		"knight",
+		"swat team",
+		"professional boxer",
+		"cowboy"
+	],
+	"links": [
+		{ 
+			"source": "coordination",
+			"destination": "dexterity",
+			"strength": 5
+		},
+		{
+			
+		}
+	]
+}}
