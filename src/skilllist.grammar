@@ -1,0 +1,33 @@
+skillgraph
+  = line*
+
+line
+  = comment 
+  / node
+  / emptyLine
+
+emptyLine
+  = NL
+
+node
+  = _ name _  '.' _ NL
+//  / _ name _ ':' _ name _ number _ '.' NL
+
+nodeTail
+  = '.' _ NL
+
+
+NL
+  = '\r' '\n'
+
+comment
+  = '#' .* NL
+
+name
+  = [a-z]+
+
+number
+   = [0-9]+
+
+_ "whitespace"
+  = [ \t]*

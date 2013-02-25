@@ -24,18 +24,29 @@
 	"buffers":
 	[
 		{
+			"contents": "var fs = require('fs');\nvar PEG = require('pegjs');\nvar path = require('path');\n\nvar grammarFile = \"skilllist.grammar\";\nvar skillFile = \"../examples/modern-combat/skills.txt\";\n\nfs.readFile(grammarFile, 'utf-8', readGrammarFile);\n\nfunction readGrammarFile(err, data) {\n	grammarContent = data;\n	createParser(data);\n}\n\nfunction parseSkillFile(parser, data) { \n	var result = parser.parse(data, 'node');\n	console.log(\"parsed\");\n	console.log(JSON.stringify(result, null, 2));\n}\n\nfunction logSyntaxError(filePath, e) {\n	var fileName = path.basename(filePath);\n	var message = fileName + \":\" + e.line + \":\" + e.column + \": \" + e.message;\n	console.log(message);\n}\n\nfunction createParser(grammar) {\n	var parserOptions = { \n		cache: true, \n		trackLineAndColumn: true \n	};\n	var parser = PEG.buildParser(grammar, parserOptions);\n	fs.readFile(skillFile, 'utf-8', function(err,data) {\n		\n		var BOM = '\\uFEFF';\n		if (data.substring(0,BOM.length).indexOf(BOM) != -1) {\n			//console.log(\"stripping BOM\");\n			data = data.substring(BOM.length);\n		}\n		\n		console.log(data.substring(0, 80)\n			.replace(/\\r/g, '\\\\r')\n			.replace(/\\t/g, '\\\\t')\n			.replace(/\\n/g, '\\\\n')\n			)\n\n		//console.log(data);\n		try {\n			parseSkillFile(parser, data);\n		} catch (e) {\n			logSyntaxError(skillFile, e);\n		}\n	});\n}\n",
 			"file": "src/app.js",
+			"file_size": 1331,
+			"file_write_time": 130063036996221836,
 			"settings":
 			{
-				"buffer_size": 540,
+				"buffer_size": 1275,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/skillgrammar.txt",
+			"file": "src/skilllist.grammar",
 			"settings":
 			{
-				"buffer_size": 427,
+				"buffer_size": 283,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "examples/modern-combat/skills.txt",
+			"settings":
+			{
+				"buffer_size": 854,
 				"line_ending": "Windows"
 			}
 		}
@@ -59,10 +70,7 @@
 	},
 	"console":
 	{
-		"height": 125.0,
-		"history":
-		[
-		]
+		"height": 125.0
 	},
 	"distraction_free":
 	{
@@ -75,6 +83,7 @@
 	},
 	"file_history":
 	[
+		"/C/usr/src/Mettle/mettle.sublime-workspace",
 		"/C/usr/src/Mettle/examples/modern-combat/skills.txt",
 		"/C/usr/src/Mettle/src/app.js",
 		"/C/usr/src/Mettle/src/package.json",
@@ -227,23 +236,58 @@
 				{
 					"buffer": 0,
 					"file": "src/app.js",
-					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 540,
+						"buffer_size": 1275,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								540,
-								540
+								1030,
+								1030
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 383.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "src/skilllist.grammar",
+					"settings":
+					{
+						"buffer_size": 283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -258,27 +302,24 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
-					"file": "src/skillgrammar.txt",
-					"semi_transient": false,
+					"buffer": 2,
+					"file": "examples/modern-combat/skills.txt",
 					"settings":
 					{
-						"buffer_size": 427,
+						"buffer_size": 854,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								81,
-								81
+								17,
+								17
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -295,7 +336,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -312,12 +353,19 @@
 				0,
 				2,
 				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.558654764516,
+			0.782532894737,
 			1.0
 		],
 		"rows":
@@ -329,9 +377,8 @@
 	"menu_visible": true,
 	"output.git":
 	{
-		"height": 306.0
+		"height": 202.0
 	},
-	"project": "/C/usr/src/Mettle/mettle.sublime-project",
 	"replace":
 	{
 		"height": 62.0
@@ -397,24 +444,10 @@
 		],
 		"width": 380.0
 	},
-	"select_symbol":
-	{
-		"height": 0.0,
-		"selected_items":
-		[
-		],
-		"width": 0.0
-	},
-	"settings":
-	{
-	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 150.0,
-	"status_bar_visible": true,
-	"template_settings":
-	{
-	}
+	"status_bar_visible": true
 }

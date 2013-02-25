@@ -1,9 +1,6 @@
-﻿#
-# basic stats -- they are the most general.
-#
-dexterity.
-fitness.
+﻿dexterity.
 size.
+fitness.
 
 # derived stats
 coordination: dexterity 5.
