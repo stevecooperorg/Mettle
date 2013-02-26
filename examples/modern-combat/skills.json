@@ -35,8 +35,86 @@
 			"destination": "dexterity",
 			"strength": 5
 		},
-		{
-			
+		{ 
+			"source": "firearms",
+			"destination": "coordination",
+			"strength": 5
+		},
+		{ 
+			"source": "handgun",
+			"destination": "firearms",
+			"strength": 5
+		},
+		{ 
+			"source": "handgun",
+			"destination": "quickdraw",
+			"strength": 5
+		},
+		{ 
+			"source": "rifle",
+			"destination": "firearms",
+			"strength": 5
+		},
+		{ 
+			"source": "quickdraw",
+			"destination": "coordination",
+			"strength": 5
+		},
+				{ 
+			"source": "kick",
+			"destination": "brawl",
+			"strength": 8
+		},
+				{ 
+			"source": "kick",
+			"destination": "running",
+			"strength": 2
+		},		{ 
+			"source": "parry",
+			"destination": "coordination",
+			"strength": 5
+		},
+		{ 
+			"source": "punch",
+			"destination": "brawl",
+			"strength": 8
+		},
+				{ 
+			"source": "brawl",
+			"destination": "dexterity",
+			"strength": 5
+		},
+				{ 
+			"source": "brawl",
+			"destination": "fitness",
+			"strength": 5
+		},
+				{ 
+			"source": "brawl",
+			"destination": "size",
+			"strength": 5
+		},		{ 
+			"source": "karate",
+			"destination": "punch",
+			"strength": 7
+		},		{ 
+			"source": "karate",
+			"destination": "kick",
+			"strength": 6
+		},
+				{ 
+			"source": "karate",
+			"destination": "fitness",
+			"strength": 5
+		},
+				{ 
+			"source": "Queensbury rules",
+			"destination": "punch",
+			"strength": 9
+		},		{ 
+			"source": "Queensbury rules",
+			"destination": "fitness",
+			"strength": 8
 		}
 	]
 }}

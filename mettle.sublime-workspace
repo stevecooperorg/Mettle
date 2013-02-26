@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"qu",
+				"Queensbury"
+			],
+			[
+				"de",
+				"dexterity"
+			],
+			[
 				"skillF",
 				"skillFile"
 			],
@@ -24,21 +32,10 @@
 	"buffers":
 	[
 		{
-			"contents": "var fs = require('fs');\nvar PEG = require('pegjs');\nvar path = require('path');\n\nvar grammarFile = \"skilllist.grammar\";\nvar skillFile = \"../examples/modern-combat/skills.txt\";\n\nfs.readFile(grammarFile, 'utf-8', readGrammarFile);\n\nfunction readGrammarFile(err, data) {\n	grammarContent = data;\n	createParser(data);\n}\n\nfunction parseSkillFile(parser, data) { \n	var result = parser.parse(data, 'node');\n	console.log(\"parsed\");\n	console.log(JSON.stringify(result, null, 2));\n}\n\nfunction logSyntaxError(filePath, e) {\n	var fileName = path.basename(filePath);\n	var message = fileName + \":\" + e.line + \":\" + e.column + \": \" + e.message;\n	console.log(message);\n}\n\nfunction createParser(grammar) {\n	var parserOptions = { \n		cache: true, \n		trackLineAndColumn: true \n	};\n	var parser = PEG.buildParser(grammar, parserOptions);\n	fs.readFile(skillFile, 'utf-8', function(err,data) {\n		\n		var BOM = '\\uFEFF';\n		if (data.substring(0,BOM.length).indexOf(BOM) != -1) {\n			//console.log(\"stripping BOM\");\n			data = data.substring(BOM.length);\n		}\n		\n		console.log(data.substring(0, 80)\n			.replace(/\\r/g, '\\\\r')\n			.replace(/\\t/g, '\\\\t')\n			.replace(/\\n/g, '\\\\n')\n			)\n\n		//console.log(data);\n		try {\n			parseSkillFile(parser, data);\n		} catch (e) {\n			logSyntaxError(skillFile, e);\n		}\n	});\n}\n",
-			"file": "src/app.js",
-			"file_size": 1331,
-			"file_write_time": 130063036996221836,
+			"file": "examples/modern-combat/skills.json",
 			"settings":
 			{
-				"buffer_size": 1275,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/skilllist.grammar",
-			"settings":
-			{
-				"buffer_size": 283,
+				"buffer_size": 1870,
 				"line_ending": "Windows"
 			}
 		},
@@ -83,9 +80,14 @@
 	},
 	"file_history":
 	[
-		"/C/usr/src/Mettle/mettle.sublime-workspace",
-		"/C/usr/src/Mettle/examples/modern-combat/skills.txt",
 		"/C/usr/src/Mettle/src/app.js",
+		"/C/usr/src/treemap/app.js",
+		"/C/usr/src/treemap/data.json",
+		"/C/usr/src/treemap/Squarify.js",
+		"/C/usr/src/Mettle/examples/modern-combat/skills.txt",
+		"/C/usr/src/Mettle/src/skilllist.grammar",
+		"/C/usr/src/Mettle/examples/modern-combat/skills.json",
+		"/C/usr/src/Mettle/mettle.sublime-workspace",
 		"/C/usr/src/Mettle/src/package.json",
 		"/C/usr/Dropbox/projects/programming-career/job-application.text",
 		"/C/usr/Dropbox/The Hills Are Alive With The Sound of Glute Pain.text",
@@ -202,6 +204,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\",\n",
 			"start",
 			"parser",
 			"1",
@@ -235,27 +238,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/app.js",
+					"file": "examples/modern-combat/skills.json",
 					"settings":
 					{
-						"buffer_size": 1275,
+						"buffer_size": 1870,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1030,
-								1030
+								1864,
+								1864
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 383.0,
+						"translation.y": 1553.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -268,41 +271,6 @@
 			[
 				{
 					"buffer": 1,
-					"file": "src/skilllist.grammar",
-					"settings":
-					{
-						"buffer_size": 283,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								80,
-								80
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 2,
 					"file": "examples/modern-combat/skills.txt",
 					"settings":
 					{
@@ -313,8 +281,8 @@
 						"selection":
 						[
 							[
-								17,
-								17
+								576,
+								576
 							]
 						],
 						"settings":
@@ -322,7 +290,7 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 263.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -353,19 +321,12 @@
 				0,
 				2,
 				1
-			],
-			[
-				2,
-				0,
-				3,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.558654764516,
-			0.782532894737,
+			0.5,
 			1.0
 		],
 		"rows":
