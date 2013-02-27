@@ -28,7 +28,7 @@
 		// use'", use \' to escape single-quotes.
 		this.addTokenType({ 
 			name: "skill", 
-			regexp: /^'(x|[^'])+'/, 
+			regexp: /^'(\'|[^'])+'/, 
 			interpreter: function(content) {
 				var insideQuotes = content.substring(1, content.length-1);
 				var escapeQuotes = insideQuotes.replace("\'", "'");

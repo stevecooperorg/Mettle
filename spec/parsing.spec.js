@@ -51,7 +51,7 @@ describe("the lexer", function() {
 		];
 		expect(tokens).toEqual(expected);
 	});
-	
+
 	it("should understand multiple quoted names", function() {
 		var input = "'first' 'second'";
 		var tokens = lexer.tokenize(input);
