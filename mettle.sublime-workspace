@@ -32,18 +32,18 @@
 	"buffers":
 	[
 		{
-			"file": "examples/modern-combat/skills.json",
+			"file": "/C/usr/src/Canto34/spec/canto34.spec.js",
 			"settings":
 			{
-				"buffer_size": 1870,
+				"buffer_size": 3763,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "examples/modern-combat/skills.txt",
+			"file": "/C/usr/src/Canto34/src/canto34.js",
 			"settings":
 			{
-				"buffer_size": 854,
+				"buffer_size": 3130,
 				"line_ending": "Windows"
 			}
 		}
@@ -80,13 +80,19 @@
 	},
 	"file_history":
 	[
+		"/C/usr/src/Canto34/src/canto34.js",
+		"/C/usr/src/Canto34/tests/lexertests.js",
+		"/C/usr/src/Canto34/README.md",
+		"/C/usr/src/Canto34/package.json",
+		"/C/usr/src/Mettle/examples/modern-combat/skills.json",
+		"/C/usr/src/Mettle/examples/modern-combat/skills.txt",
+		"/C/usr/src/Canto34/build.bat",
+		"/C/usr/src/Canto34/build.js",
 		"/C/usr/src/Mettle/src/app.js",
 		"/C/usr/src/treemap/app.js",
 		"/C/usr/src/treemap/data.json",
 		"/C/usr/src/treemap/Squarify.js",
-		"/C/usr/src/Mettle/examples/modern-combat/skills.txt",
 		"/C/usr/src/Mettle/src/skilllist.grammar",
-		"/C/usr/src/Mettle/examples/modern-combat/skills.json",
 		"/C/usr/src/Mettle/mettle.sublime-workspace",
 		"/C/usr/src/Mettle/src/package.json",
 		"/C/usr/Dropbox/projects/programming-career/job-application.text",
@@ -238,27 +244,26 @@
 			[
 				{
 					"buffer": 0,
-					"file": "examples/modern-combat/skills.json",
+					"file": "/C/usr/src/Canto34/spec/canto34.spec.js",
 					"settings":
 					{
-						"buffer_size": 1870,
+						"buffer_size": 3763,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1864,
-								1864
+								3138,
+								3138
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
-						"translation.x": 0.0,
-						"translation.y": 1553.0,
+						"translation.x": 28.0,
+						"translation.y": 1570.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -271,26 +276,26 @@
 			[
 				{
 					"buffer": 1,
-					"file": "examples/modern-combat/skills.txt",
+					"file": "/C/usr/src/Canto34/src/canto34.js",
 					"settings":
 					{
-						"buffer_size": 854,
+						"buffer_size": 3130,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								576,
-								576
+								2909,
+								2909
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 263.0,
+						"translation.y": 1448.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -326,7 +331,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.401465161782,
 			1.0
 		],
 		"rows":
