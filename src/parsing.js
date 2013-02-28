@@ -2,34 +2,22 @@
 (function(parsing){
     var canto34 = require('../../Canto34/src/canto34');
 
-	parsing.Parser = function(tokens) {
-		canto34.Parser.call(this);
-		this.initialize(tokens);
-		this.result = {
-			nodes: [],
-			edges: []
-		};
-	};
+	// parsing.Parser = function() {
+	// };
 
-	parsing.Parser.prototype = new canto34.Parser([]);
+	// parsing.Parser.prototype.parse = function(tokens) {
+	// 	var graph = {
+	// 		nodes: [],
+	// 		edges: []
+	// 	};
 
-	parsing.Parser.prototype.parse = function() {
-		return this.result;
-	};
-
-	parsing.Parser.prototype.skill = function() {
-		if (this.la1("skill")) {
-			var skillName = this.match("skill").content;
-			this.match("period");
-			this.result.nodes.push({ name:skillName });
-		}
-		return this.result;
-	};
+	// 	return graph;
+	// }
 
 	parsing.Lexer = function() {
 		canto34.Lexer.call(this);
-		this.addTokenType(canto34.StandardTokenTypes.whitespaceWithNewlines());
-		this.addTokenType(canto34.StandardTokenTypes.integer());
+		this.addTokenType(canto34.StandardTokenTypes.whitespace());
+		
 		// skills can be names like "running"
 		this.addTokenType({ 
 			name: "skill", 
@@ -40,22 +28,12 @@
 		// use'", use \' to escape single-quotes.
 		this.addTokenType({ 
 			name: "skill", 
-			regexp: /^'(\\'|[^'])+'/, 
+			regexp: /^'(\'|[^'])+'/, 
 			interpreter: function(content) {
 				var insideQuotes = content.substring(1, content.length-1);
 				var escapeQuotes = insideQuotes.replace("\'", "'");
 				return escapeQuotes;
 			} 
-		});
-
-		this.addTokenType({
-			name: "period",
-			regexp: /^\./
-		});
-
-		this.addTokenType({
-			name: "colon",
-			regexp: /^:/
 		});
 	};
 
