@@ -104,17 +104,17 @@ describe("the parser", function() {
 				{ 
 					source: "coordination", 
 					destination:"dexterity", 
-					strength: 5
+					distance: 5
 				},
 				{ 
 					source: "coordination", 
 					destination:"quickdraw", 
-					strength: 6
+					distance: 6
 				},
 				{ 
 					source: "coordination", 
 					destination:"brawl", 
-					strength: 7
+					distance: 7
 				}
 			]
 		});

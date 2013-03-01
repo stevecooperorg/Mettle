@@ -35,12 +35,12 @@
 				var done = false;
 				while(!done) {
 					var secondarySkillName = this.match("skill").content;
-					var strength = this.match("integer").content;
+					var distance = this.match("integer").content;
 					var secondarySkill = this._addSkill(secondarySkillName);
 					var edge = {
 						source: skill.name,
 						destination: secondarySkill.name,
-						strength: strength
+						distance: distance
 					};
 					this.result.edges.push(edge);
 
