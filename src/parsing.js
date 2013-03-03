@@ -1,6 +1,6 @@
 "use strict";
 (function(parsing){
-    var canto34 = require('canto34.js');
+    var canto34 = require('canto34');
 
 	parsing.Parser = function(tokens) {
     	canto34.Parser.call(this);

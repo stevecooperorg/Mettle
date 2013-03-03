@@ -1,6 +1,6 @@
 "use strict"
 var parsing = require('../src/parsing');
-var canto34 = require('canto34.js');
+var canto34 = require('canto34');
 
 describe("the lexer", function() {
 	var lexer;
