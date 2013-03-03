@@ -1,6 +1,6 @@
 "use strict";
 (function(parsing){
-    var canto34 = require('../../Canto34/src/canto34');
+    var canto34 = require('canto34.js');
 
 	parsing.Parser = function(tokens) {
     	canto34.Parser.call(this);
@@ -86,7 +86,7 @@
 		this.addTokenType({ 
 			name: "skill", 
 			regexp: /^'(\\'|[^'])+'/, 
-			interpreter: function(content) {
+			interpret: function(content) {
 				var insideQuotes = content.substring(1, content.length-1);
 				var escapeQuotes = insideQuotes.replace("\'", "'");
 				return escapeQuotes;
