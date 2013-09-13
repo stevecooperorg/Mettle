@@ -20,7 +20,6 @@
 		{ "name": "sword" },
 		{ "name": "shield" },
 		{ "name": "spear" },
-		{ "name": "running" },
 		{ "name": "sprint" },
 		{ "name": "dodge" },
 		{ "name": "horseriding" },
@@ -29,8 +28,7 @@
 		{ "name": "swat team*" },
 		{ "name": "professional boxer*" },
 		{ "name": "cowboy*" },
-		{ "name": "lance" },
-		{ "name": "tactics" }
+		{ "name": "lance" }
 	],
 	"links": [
 		{ 
