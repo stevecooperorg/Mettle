@@ -8,7 +8,7 @@ mettle.characterDesigner.prototype.draw = function(data, selector) {
 	var width = 600,
 		height =width,
 		linkDistance = width * 0.05,
-		charge = -width * 0.5,
+		charge = -width * 0.9,
 		owningDiv = d3.select(selector)
 		;
 
