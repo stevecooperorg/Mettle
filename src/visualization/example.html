@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.3.3/d3.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript" src="sankey.js"></script>
+	<script type="text/javascript" src="mettle.characterDesigner.js"></script>
+	<title>Example Mettle Character</title>
+</head>
+<body>
+<div id="viz" style="border: 1px solid black; background-color: #C2DEEA">
+</div>
+<style>
+	g.node rect { 
+		stroke: rgba(31, 42, 70, 1);
+		fill: rgba(80, 123, 168, 0.5) /* #284E8F; */
+	}
+	g.node text {
+		fill: white;
+	}
+	line.link {
+		stroke: rgba(213, 105, 121, 0.33);
+	}
+</style>
+<script>
+$(function() {
+	d3.json("../../examples/modern-combat/skills.json", function(data) {
+		var viz = new mettle.characterDesigner();
+		viz.draw(data, '#viz');
+	});
+
+	
+})
+</script>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
