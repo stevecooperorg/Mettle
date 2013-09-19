@@ -61,6 +61,11 @@
 			"target": "coordination",
 			"value": 5
 		},
+		{ 
+			"source": "lance",
+			"target": "melee",
+			"value": 5
+		},
 				{ 
 			"source": "kick",
 			"target": "brawl",
