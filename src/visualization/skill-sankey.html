@@ -45,7 +45,7 @@
             height = 500 - margin.top - margin.bottom;
 
         var formatNumber = d3.format(",.0f"),
-            format = function (d) { return formatNumber(d) + " TWh"; },
+            format = function (d) { return formatNumber(d) + "/10 points flow"; },
             color = d3.scale.category20();
 
         var svg = d3.select("#chart").append("svg")
@@ -91,6 +91,20 @@
 
             link.append("title")
                 .text(function (d) { return d.source.name + " → " + d.target.name + "\n" + format(d.value); });
+
+            link.on("mouseover", function (d) {
+                console.log("hover" + d.source.name + " -> " + d.target.name);
+                var unvisited = [];
+                var walk = function (link) {
+                    //console.log("walking ", link.source.name, " to ", link.target.name);
+                    unvisited.push(link.source);
+                    $.each(link.source.targetLinks, function (i, link, c, d, e) {
+                        walk(link);
+                    });
+                }
+                walk(d);
+                console.log("found ", unvisited.length);
+            });
 
             var node = svg.append("g").selectAll(".node")
                 .data(energy.nodes)
